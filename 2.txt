@@ -1,0 +1,32 @@
+-Objetos são acessados por referência
+
+Quando declaramos uma variável para associar a um objeto , na verdade essa variável não guarda o objeto , e sim uma maneira de acessá-lo chamada de referência.
+
+É por isso que diferente dos tipos primitivos como "int" e "long" , precisamos utilizar "new" deopis de declarada a variável.
+
+Ex:
+    public static void main(String args[]){
+    Conta c1;
+    c1=new Conta();
+    conta c2;
+    c2=new Conta();
+    }
+
+*Não é correto dizer que C1 é um objeto,pois C1 é uma variável de referência;o correto é:"tenho uma referência C a um objeto do tipo Conta".
+
+Em Java uma variável nunca é um objeto.
+
+
+
+Internamente C1 e C2 vão guardar um número que identifica em que posição da memória aquela Conta se encontra.
+
+Ex: 
+   class TestaReferencias{
+        public static void main(String args[]){
+           conta C1=newConta();
+           C1.deposita(100);
+           Cont C2=C1;
+           C2.deposita(200);
+           System.out.println(C1.saldo);
+           System.out.println(C2.saldo);
+       }
