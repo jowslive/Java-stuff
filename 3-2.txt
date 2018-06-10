@@ -1,0 +1,31 @@
+-Tipo "char"- Observações importantes
+
+O tipo "char" é um inteiro e sua saída é expressa em formato ASCII.
+ 
+ Exemplo :
+            char a = 67
+            int b = 'c';
+            System.out.println (a+"e"+b)
+            Resulta: C e 67
+
+-Casting
+
+Alguns valores são incompatíveis se você tentar fzer uma atribuição direta.
+Enquanto um número real costuma ser representado em uma variável do tipo double , tentar atribuir a ela um valor int não funciona porque é um código que diz "i deve valer d", mas não se sabe se d realmente é um número inteiro ou não.
+
+             double d = 3,1415;
+             int i = d; // não compila
+
+O mesmo ocorre no trecho:
+             
+             double d = 5;
+             int i = d;
+
+Apesar de ser um bom valor para um int, o compilador não tem como saber que valor estará armazenado nesse double no momento da execução.Esse valor pode ter sido digitado pelo usuário e ninguém vai garantir que essa conversão ocorrerá sem perda de valores.
+Às vezes precisamos que um número quebrado seja arredondado e armazenado num inteiro.Para fazer isso sem que seja gerado um erro de compilação,é preciso ordenar que o número quebrado seja moldado (casted) como um número inteiro.Esse processo recebe o nome de casting.
+
+ Exemplo :
+           
+            double d3 = 3,14;
+            int i = (int) d3; 
+	            
