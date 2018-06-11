@@ -1,0 +1,24 @@
+-Encapsulamento
+
+*Atributos privados 
+
+Um atributo privado só pode ser acessado ou alternado por código escrito dentro da classe na qual ele foi definido.
+Exemplo:  
+         class Funcionario{
+         double salario;
+         }
+
+O atributo "salário" pode ser acessado ou modificado por código escrito em qualquer classe que esteja no mesmo diretório que a classe "Funcionário" está definida.Portanto , o controle desse atributo é descentralizado.
+Para identificar um erro relacionado à manipulação dos salários dos funcionários , é necessário verificar o código de todos os arquivos da pasta onde a classe "Funcionário" está definida.
+Quanto maior o número de arquivos menos eficiente será a manutenção da aplicação.
+Podemos obter um controle centralizado tornando o atributo "salário" privado e definindo métodos para implementar todas as lógicas que utilizam ou modificam o valor deste atributo.
+         class Funcionario{
+         private double salario;
+         void aumentaSalario(double aumento){
+         //lógica para aumentar o salário
+            }
+         }
+Um atributo privado só pode ser acessado ou alterado por código escrito dentro da classe na qual ele foi definido.
+Se algum código fora da classe "funcionário" tentar acessá-lo ou alterar seu valor um erro de compilação será gerado.
+Definir todos os atributos como privados e métodos para implementar as lógicas de acesso e alteração é quase uma regra da orientação a objetos.
+O intuito é sempre ter um controle centralizado dos dados dos objetos para facilitar a manutenção do sistema e a detecção de erros.
