@@ -1,0 +1,46 @@
+-Métodos Privados
+                                                                                         ps: double valor é um parametro (pode ser 0 / 1 / -1..)
+
+O papel de alguns métodos pode ser o de auxiliar outros métodos da mesma classe.
+E muitas vezes , não é correto chamar esses métodos auxiliares de fora da classe diretamente.
+No exemplo abaixo,o método descontaTarifa() é um método auxiliar dos métodos deposita() e saca().
+Além disso , ele não deve ser invocado diretamente , pois a tarifa só deve ser descontada quando ocrre um depósito ou um saque.
+       
+        class Conta {
+                private double saldo;
+                void desposita(double valor){
+                       this.saldo+=valor;
+                       this.descontaTarifa();
+                    }
+                 void saca(double valor){
+                       this.saldo-=valor;
+                       this.descontaTarifa();
+                    }
+                 void descontaTarifa(){
+                       this.saldo-=0,1;
+                    }  
+                 }
+           
+Para garantir que métodos auxiliares não sejam invocados por código escrito fora da classe na qual eles foram definidos,poedmos torná-los privados,acrescentando o modificado "private".
+                 private void desconta Tarifa(){
+                       this.saldo-=0,1;
+                 }
+                    
+Qualquer chamada ao método descontaTarifa() realizada fora da classe conta gera um erro de compilação.
+                      
+-Métodos Públicos
+                     
+Os métodos que devem ser invocados a partir de qualquer parte do sistema devem possuir o modificador de visibilidade "public".
+                           
+        class Conta {
+                 private double saldo;
+                 public void deposita (double valor){
+                 "..."
+                 }
+                 public void saca (double valor){
+                 "..."
+                 }
+                 private descontaTarifa (){
+                 "..."
+                 }
+             }      
