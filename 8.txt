@@ -1,0 +1,14 @@
+O escopo de uma variável define a seção de código fonte de onde a variável pode ser acessada.
+O tempo de vida de uma variável descreve quanto tempo a variável continuará a existir antes de ser destruída.
+ Ex:
+  	public class TicketMachine{
+            private int price
+            private int balance
+        public TicketMachine(int TicketCost){
+            int quantidade;
+            price=TicketCost;
+            balance=0;
+	    total=0;
+            quantidade=0;
+          }
+        }
