@@ -1,6 +1,6 @@
 -Diagramas de classes e diagramas de objetos
 
-O diagrama de classes mostra as classes de uma aplicação e os relacionamentos entre elas.
+O diagrama de classes mostra as classes de uma aplicaÃ§Ã£o e os relacionamentos entre elas.
 
 Ele fornece as informacoes sobre o codigo fonte e apresenta a visualizacao estatica de um programa.
 
