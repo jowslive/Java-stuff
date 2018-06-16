@@ -1,0 +1,57 @@
+Modificadores de acesso
+
+Os modificadores de acesso sao padroes de visibilidade de acesso as classes e metodos.Esses metodos sao palavras chaves representadas pelo JAVA ,ou seja, palavras reservadas que nao podem ser usadas como nomes de metodos, classes ou atributos.
+Como boas praticas do JAVA na maioria das declaracoes de variaveis de instancia sao definidos os seus atributos com a palavra  chave private 
+para garantir a seguranca de alteracoes acidentes, sendo somente acessiveis atraves dos metodos. Essa acao tem como efeito ajudar no 
+encapsulamento dos dados, preservando mais a seguranca e a aplicacao de programacao orientada a objetos.
+
+1- public 
+
+Uma declaracao com o modificador public pode ser acessada de qualquer lugar e por qualquer entidade que possa visualizar a classe a que
+ele pertence.
+
+2- private 
+
+Os membros da classe definidos como private nao podem ser acessados ou usados por nenhuma outra classe.
+Esses modificadores nao se aplica as classes , somente para seus atributos e metodos tambem nao podem ser visualizados pelas classes herdadas.
+
+3- protected 
+
+O modificador protected torna o membro acessivel as classes do mesmo pacote(package) ou atraves de heranca, seus membros herdados nao sao 
+acesssiveis a outras classes fora do pacote que foram declaradas.
+
+4- default(padrao)
+
+A classe e/ou seus membros acessiveis somente por classes do mesmo pacote, na sua declaracao nao é definido nenhum tipo de modificador 
+sendo este identificado pelo compilador.
+
+EX:
+
+public class Modificador_Default{
+	public static void main(String [] args){
+	
+	String nome= "Felipe Fernandes"
+	System.out.println("Nome" = nome);
+	}
+}
+
+5- final
+
+Quando e aplicado na classse nao permite estende-lo nos metodos impede  que o mesmo seja sobrescrito(ovverring) na subclasse e nos velores 
+de variaveis nao pode ser alterado depois que ha tenha sido atribuido o valor.
+
+6- abstract 
+
+Esse modificador nao e aplicado nas variaveis apenas nas classes. Uma classe abstrata nao pode ser instanciada, ou seja nao pode ser chamada
+(invocado)  pelos seus construtores.
+Se houver alguma declaracao de um metodo como abstract (abstrato), a classe tambem deve ser marcado como abstract.
+
+7- static 
+
+É usado para a criacao de uma variavel que podera ser acessada por todas as instancias de objetos desta classe como uma variavel comum, 
+ou seja a variavel sera a mesma em todas as instancias e quando seu conteudo é modificado numa das instancias a modificao ocorre em todas 
+as demais .
+E nas declaracoes de metodos ajudam no acesso direto a classe, portanto nao e necessario instanciar um objeto para acessar o metodo.
+	
+		
+	

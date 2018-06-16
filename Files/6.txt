@@ -1,0 +1,9 @@
+Por que encapsular?
+
+Um das ideias a mais importantes do orintacao a objeto é o encapsulamento.Encapsualar significa esconder a implementacao dos
+objetos.O encapsulamento fornece principalmetnte dois aspectos de um sistema a manutencao e o desenolvimento.
+A manutencao e fornecida para uma vez aplicado o encapsulamento quando o funcionamento de um objeto deve ser alterado em geral
+basta modificar a classe do mesmo.
+O desenvolvimento é favorecido pois uma vez aplicada o encapsulamento conseguimos determinar precisamente as responsabilidades de cada 
+classe da aplicacao.
+O conceito de encapsulamento pode ser identificado em diversos exemplos do cotidiano.Hoje em dia as pessoas estão acostumadas com os celulares.Os botoões.a tela e os menus de um celular formam a interface de uso do mesmo.Em outras palavras,o usuário interage com esses aparelhos através dos botões,da tela e dos menus.Os dispositivos internos e os processos que transformam o som capturado pelo microfone em ondas que podem ser transmitidas para uma antena de operadora de telefonia móvel constituem a implementação do celular.
