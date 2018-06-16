@@ -1,0 +1,11 @@
+-Invocando o método reescrito
+
+Depois de reescrito, nao podemos mais invocar o metodo antigo que fora herdado ds classe mae : realmente alteramos o seu comportamento . Mas podemos invoca-lo no caso de estarmos dentro da classe .
+Imagine que para calcular a bonificacao de um gerente devemos fazer igual ao calculo de um "Funcionario" porem adicionado de R$ 1000,00 . Poderiamos fazer assim :
+class Gerente extends Funcionario{
+int senha ;
+int numeroDeFuncionarios;
+public double getBonificacao(){
+return this.salario*0,1+1000;
+}
+}

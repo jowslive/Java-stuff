@@ -1,0 +1,9 @@
+Aqui teriamos um problema : o dia que o "getBonificacao" do "Funcionario" mudar , precisaremos mudar o metodo do "Gerente" para acompanhar a nova bonificacao. Para evitar isso , o "getBonificacao" do "Gerente" pode invocar o do "Funcionario" utilizando a palavra chave super :
+class Gerente extends Funcionario{
+int senha;
+int numeroDeFuncionarios;
+public double getBonificacao(){
+return super.getBonificacao+1000;
+}
+}
+Essa invocacao vai procurar o metodo "getBonificacao" na superclasse "Funcionario".
